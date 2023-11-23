@@ -1,0 +1,132 @@
+@charset "EUC-KR";
+
+.ban_pick_tool {
+    border: solid;
+    width:800px;
+    height:500px;
+    padding: 3px;
+    text-align: center;
+    background-image: url(/Images/lck_logo.jpg);
+    background-size: cover;
+}
+.champ {
+    border: solid;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.blue_pick{
+    border: solid;
+    background-color: yellowgreen;
+    height: 300px;
+    float: left;
+}
+.red_pick{
+    border: solid;
+    background-color: yellowgreen;
+    float: right;
+    height: 300px;
+}
+.pick{
+    border: solid;
+    background-color: wheat;
+    height: 50px;
+}
+.ban_zone {
+    border: solid;
+    background-color: violet;
+    width: 800px;
+    height: 62px;
+    padding: 3px;
+}
+.blue_ban_zone {
+    border: solid;
+    float: left;
+    width: 320px;
+    height: 56px;
+    padding: 1px;
+    background-color: purple;
+}
+.red_ban_zone {
+    border: solid;
+    float: right;
+    width: 320px;
+    height: 56px;
+    padding: 1px;
+    background-color: purple;
+}
+.blue_ban {
+    border: solid;
+    float: left;
+    background-color: wheat;
+    width: 50px;
+    height: 50px;
+}
+.red_ban {
+    border: solid;
+    float: right;
+    background-color: wheat;
+    width: 50px;
+    height: 50px;
+}
+.red_2phase {
+    border: solid;
+    float: right;
+    width: 30px;
+    height: 50px;
+}
+.blue_2phase {
+    border: solid;
+    float: left;
+    width: 30px;
+    height: 50px;
+}
+
+/* //////////// */
+
+.champs {
+	display: flex;
+}
+
+.champ_box {
+	width: 50px;
+	height: 70px;
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 1px 4px;
+}
+
+.champ_img {
+	width: 50px;
+	height: 50px;
+	
+}
+
+.champ_name {
+	width: 50px;
+	height: 20px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

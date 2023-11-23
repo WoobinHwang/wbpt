@@ -14,11 +14,10 @@ public class MainController {
 	private SeleniumService seleniumService;
 	
 	@GetMapping("/")
-	@ResponseBody
 	public String mainPage() {
 		// TODO Auto-generated method stub
 		
-		return "aaa";
+		return "MainPage";
 	}
 	
 	
@@ -28,7 +27,7 @@ public class MainController {
 		// TODO Auto-generated method stub
 		seleniumService.scraping();
 		
-		return "aaa";
+		return "end";
 	}
 	
 	
