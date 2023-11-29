@@ -8,13 +8,18 @@
     text-align: center;
     background-image: url(/Images/lck_logo.jpg);
     background-size: cover;
+    overflow:auto;
 }
-.champ {
-    border: solid;
+.champ_box {
     float: left;
     width: 50px;
-    height: 50px;
+    height: 70px;
+    padding: 3px;
     background-color: white;
+}
+.champ_img{
+	/* width: 50px;
+    height: 50px; */
 }
 .blue_pick{
     border: solid;
@@ -82,51 +87,3 @@
     width: 30px;
     height: 50px;
 }
-
-/* //////////// */
-
-.champs {
-	display: flex;
-}
-
-.champ_box {
-	width: 50px;
-	height: 70px;
-	position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 1px 4px;
-}
-
-.champ_img {
-	width: 50px;
-	height: 50px;
-	
-}
-
-.champ_name {
-	width: 50px;
-	height: 20px;
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

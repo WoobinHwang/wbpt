@@ -8,102 +8,81 @@
 </head>
 <body>
 
-	<div th:text="${test}"></div>
-
-	<center>
-		<div class="ban_pick_tool">
-			<h4>밴픽 툴</h4>
-			<div class="champs" style="overflow: auto;">
-				<!-- <span>챔피언 목록</span> -->
-				
-				
-				<span class="champ_box">
-					<img class="champ_img" alt="크산테"  
-						src="https://nng-phinf.pstatic.net/MjAyMjExMDJfMjg5/MDAxNjY3MzU0MzA4Mzcz.u4nkKRp-i7-Pbn5r0byNgxGpqEO3pbOI-02-qIHdxGQg.oyR1JBF8DHzpVcrPoHCAw8ETIXBOcHUBHxeqZGQM83sg.PNG/3.png" >
-					<span class="champ_name">크산테</span>
-				</span>
-				<span class="champ_box">
-					<img class="champ_img" alt="크산테"  
-						src="https://nng-phinf.pstatic.net/MjAyMjExMDJfMjg5/MDAxNjY3MzU0MzA4Mzcz.u4nkKRp-i7-Pbn5r0byNgxGpqEO3pbOI-02-qIHdxGQg.oyR1JBF8DHzpVcrPoHCAw8ETIXBOcHUBHxeqZGQM83sg.PNG/3.png" >
-					<span class="champ_name">벡스</span>
-				</span>
-				<span class="champ_box">
-					<img class="champ_img" alt="크산테"  
-						src="https://nng-phinf.pstatic.net/MjAyMjExMDJfMjg5/MDAxNjY3MzU0MzA4Mzcz.u4nkKRp-i7-Pbn5r0byNgxGpqEO3pbOI-02-qIHdxGQg.oyR1JBF8DHzpVcrPoHCAw8ETIXBOcHUBHxeqZGQM83sg.PNG/3.png" >
-					<span class="champ_name">아크샨</span>
-				</span>
-								
-			
-			</div>
-			
-			
-			
-			<!-- <div class="blue_pick">
-				blue팀
-				<div class="pick">first</div>
-				<div class="pick">second</div>
-				<div class="pick">third</div>
-				<div class="pick">fourth</div>
-				<div class="pick">fifth</div>
-			</div>
-			<div class="red_pick">
-				red팀
-				<div class="pick">first</div>
-				<div class="pick">second</div>
-				<div class="pick">third</div>
-				<div class="pick">fourth</div>
-				<div class="pick">fifth</div>
-			</div>
-			<div class="banpick">
-				<div class="champ">abc</div>
-				<div class="champ">def</div>
-				<div class="champ">abc</div>
-				<div class="champ">def</div>
-				<div class="champ">abc</div>
-				<div class="champ">def</div>
-				<div class="champ">abc</div>
-				<div class="champ">def</div>
-				<div class="champ">abc</div>
-				<div class="champ">def</div>
-				<div class="champ">abc</div>
-				<div class="champ">def</div>
-				<div class="champ">def</div>
-				<div class="champ">abc</div>
-				<div class="champ">def</div>
-				<div class="champ">abc</div>
-				<div class="champ">def</div>
-			</div>
+	<!-- <div th:text="${test}"></div> -->
+	<!-- <tr th:each="product : ${productList}">
+		<td th:text="${product.seq}"></td>
+		<td th:text="${product.name}"></td>
+		<td th:text="${product.price}"></td>
+		<td th:text="${product.quantity}"></td>
+	</tr> -->
+	
+	
+	<div class="ban_pick_tool" >
+		<h4>밴픽 툴</h4>
+		<!-- <div class="blue_pick">blue팀
+			<div class="pick">first</div>
+			<div class="pick">second</div>
+			<div class="pick">third</div>
+			<div class="pick">fourth</div>
+			<div class="pick">fifth</div>
+		</div>
+		<div class="red_pick">red팀
+			<div class="pick">first</div>
+			<div class="pick">second</div>
+			<div class="pick">third</div>
+			<div class="pick">fourth</div>
+			<div class="pick">fifth</div>
 		</div> -->
 		
-		<!-- <tr th:each="product : ${productList}">
-				<td th:text="${product.seq}"></td>
-				<td th:text="${product.name}"></td>
-				<td th:text="${product.price}"></td>
-				<td th:text="${product.quantity}"></td>
-			</tr> -->
+		<div class="banpick">
+			<div class="champ_box" th:each="champion : ${champions}">
+				<img class="champ_img" width="50" height="50" th:alt="${champion.champName}"
+					th:src="${champion.champImage}">
+				<small th:text="${champion.champName}">크산테</small>
+			</div>
+				
+		</div>
 		
-		<!-- <div class="ban_zone">
-			ban
-			<div class="blue_ban_zone">
-				blue_ban
-				<div class="blue_ban">first</div>
-				<div class="blue_ban">second</div>
-				<div class="blue_ban">third</div>
-				<img class="blue_2phase" src="./Images/Slash.png">
-				<div class="blue_ban">fourth</div>
-				<div class="blue_ban">fifth</div>
-			</div>
-			<div class="red_ban_zone">
-				red_ban
-				<div class="red_ban">first</div>
-				<div class="red_ban">second</div>
-				<div class="red_ban">third</div>
-				<img class="red_2phase" src="./Images/Slash.png">
-				<div class="red_ban">fourth</div>
-				<div class="red_ban">fifth</div>
-			</div>
+		<!-- <div class="banpick">
+			<div class="champ">abc</div>
+			<div class="champ">def</div>
+			<div class="champ">abc</div>
+			<div class="champ">def</div>
+			<div class="champ">abc</div>
+			<div class="champ">def</div>
+			<div class="champ">abc</div>
+			<div class="champ">def</div>
+			<div class="champ">abc</div>
+			<div class="champ">def</div>
+			<div class="champ">abc</div>
+			<div class="champ">def</div>
 		</div> -->
-	</center>
-
+		    
+	</div>
+	
+	
+	
+	<!-- <div class="ban_zone">
+		ban
+		<div class="blue_ban_zone">
+			blue_ban
+			<div class="blue_ban">first</div>
+			<div class="blue_ban">second</div>
+			<div class="blue_ban">third</div>
+			<img class="blue_2phase" src="./Images/Slash.png">
+			<div class="blue_ban">fourth</div>
+			<div class="blue_ban">fifth</div>
+		</div>
+		<div class="red_ban_zone">
+			red_ban
+			<div class="red_ban">first</div>
+			<div class="red_ban">second</div>
+			<div class="red_ban">third</div>
+			<img class="red_2phase" src="./Images/Slash.png">
+			<div class="red_ban">fourth</div>
+			<div class="red_ban">fifth</div>
+		</div>
+	</div> -->
+	
 </body>
 </html>
